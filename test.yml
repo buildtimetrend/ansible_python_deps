@@ -9,4 +9,4 @@
       - libxml2-dev
       - libxslt1-dev
     reqs:
-      - test_requirements.txt
+      - "/home/travis/build/buildtimetrend/ansible_python_deps/test_requirements.txt"
