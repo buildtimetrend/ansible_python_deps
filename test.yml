@@ -1,0 +1,12 @@
+---
+- hosts: all
+  roles:
+    - { role: python_deps}
+    - { role: python_deps, python_deps_python_version: "3" }
+
+  vars:
+    - python_deps_extra_libs:
+        - libxml2-dev
+        - libxslt1-dev
+    - python_deps_requirements:
+        - test_requirements.txt

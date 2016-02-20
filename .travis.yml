@@ -1,0 +1,10 @@
+---
+language: python
+python: "2.7"
+install:
+  - pip install ansible
+script:
+  # Check syntax
+  - ansible-playbook --syntax-check test.yml
+  # Test provisioning role
+  - ansible-playbook test.yml
