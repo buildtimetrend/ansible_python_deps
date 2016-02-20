@@ -1,5 +1,5 @@
-# ansible_python_deps
-Ansible role to install python dependencies for various python versions
+# Ansible role python_deps
+Ansible role to install python dependencies for various python versions in debian/ubuntu environment.
 
 ## Role Variables
 
