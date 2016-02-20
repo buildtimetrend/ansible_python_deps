@@ -1,9 +1,6 @@
 ---
 language: python
 python: "2.7"
-before_install:
-  - pwd
-  - ls
 install:
   - pip install ansible
 script:
