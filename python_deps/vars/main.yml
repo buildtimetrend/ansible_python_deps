@@ -1,0 +1,8 @@
+---
+python_deps_python_version: ''
+python_exec: "python{{ python_deps_python_version }}"
+pip_exec: "pip{{ python_deps_python_version }}"
+python_deps_requirements:
+  - 'requirements.txt'
+python_deps_extra_libs: []
+

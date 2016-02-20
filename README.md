@@ -7,7 +7,7 @@ Available variables are listed below, along with default values:
 
     python_deps_python_version : ''
     python_deps_extra_libs : []
-    python_deps_python_reqs : ['requirements.txt']
+    python_deps_requirements : ['requirements.txt']
 
 ## Example Playbook
 
@@ -18,7 +18,7 @@ Available variables are listed below, along with default values:
 
       vars:
         - python_deps_extra_libs : ['package-foo', 'package-bar']
-        - python_deps_python_reqs : ['/path/to/requirements.txt', '/path/to/requirements_test.txt']
+        - python_deps_requirements : ['/path/to/requirements.txt', '/path/to/requirements_test.txt']
 
 ## License
 
