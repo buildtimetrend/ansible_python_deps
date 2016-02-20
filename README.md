@@ -17,8 +17,8 @@ Available variables are listed below, along with default values:
         - { role: python_deps, python_deps_python_version: "3" }
 
       vars:
-        - python_deps_extra_libs : ['package-foo', 'package-bar']
-        - python_deps_requirements : ['/path/to/requirements.txt', '/path/to/requirements_test.txt']
+        python_deps_extra_libs : ['package-foo', 'package-bar']
+        python_deps_requirements : ['/path/to/requirements.txt', '/path/to/requirements_test.txt']
 
 ## License
 
