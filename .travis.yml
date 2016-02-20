@@ -10,3 +10,9 @@ script:
   - ansible-playbook --syntax-check -i inventory test.yml
   # Test provisioning role
   - ansible-playbook -i inventory test.yml --connection=local --sudo
+
+notifications:
+  webhooks:
+  # trigger Buildtime Trend Service to parse Travis CI log and send result to Keen.io
+  - https://buildtimetrend-dev.herokuapp.com/travis
+  - https://buildtimetrend.herokuapp.com/travis
