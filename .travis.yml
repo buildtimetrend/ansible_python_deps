@@ -1,7 +1,6 @@
 ---
 language: python
 python: "2.7"
-python: "3.5"
 install:
   - pip install ansible
 script:
@@ -10,7 +9,7 @@ script:
   # Check syntax
   - ansible-playbook --syntax-check -i inventory test.yml
   # Test provisioning role
-  - ansible-playbook -i inventory test-$TRAVIS-PYTHON-VERSION.yml --connection=local --sudo
+  - ansible-playbook -i inventory test.yml --connection=local --sudo
 
 notifications:
   webhooks:
