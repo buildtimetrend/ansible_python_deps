@@ -2,7 +2,6 @@
 - hosts: all
   roles:
     - { role: python_deps, python_deps_extra_libs: "{{ extra_libs }}", python_deps_requirements: "{{ reqs }}"}
-    - { role: python_deps, python_deps_extra_libs: "{{ extra_libs }}", python_deps_requirements: "{{ reqs }}", python_deps_python_version: "3" }
 
   vars:
     extra_libs:
