@@ -8,6 +8,10 @@
   when: pipinstaller|success
   register: pipinstalled
 
+- name: "Install Python nose"
+  apt: name="{{ python_exec }}-nose" state=latest
+  register: noseinstalled
+
 - name: "Install required libraries"
   apt: name={{ item }} state=latest
   with_items:
@@ -21,6 +25,4 @@
     requirements={{ item }}
     executable={{ pip_exec }}
   when: pipinstalled|success and libsinstalled|success
-  with_items:
-    - nose
-    - "{{ python_deps_requirements }}"
+  with_items: "{{ python_deps_requirements }}"
