@@ -8,9 +8,9 @@ script:
   # Prepare tests
   - echo localhost > inventory
   # Check syntax
-  - ansible-playbook --syntax-check -i inventory test-$TRAVIS_PYTHON_VERSION.yml
+  - ansible-playbook --syntax-check -i inventory test.yml
   # Test provisioning role
-  - ansible-playbook -i inventory test-$TRAVIS_PYTHON_VERSION.yml --connection=local --sudo
+  - ansible-playbook -i inventory test-$TRAVIS-PYTHON-VERSION.yml --connection=local --sudo
 
 notifications:
   webhooks:
