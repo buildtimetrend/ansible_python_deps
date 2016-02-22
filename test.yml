@@ -8,5 +8,5 @@
         python_deps_extra_libs:
           - libxml2-dev
           - libxslt1-dev
-        python_dep_requirements:
+        python_deps_requirements:
           - "/home/travis/build/buildtimetrend/ansible_python_deps/test_requirements.txt"
