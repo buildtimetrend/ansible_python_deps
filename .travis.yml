@@ -16,3 +16,5 @@ notifications:
   # trigger Buildtime Trend Service to parse Travis CI log and send result to Keen.io
   - https://buildtimetrend-dev.herokuapp.com/travis
   - https://buildtimetrend.herokuapp.com/travis
+  # trigger ansible galaxy import
+  - https://galaxy.ansible.com/api/v1/notifications/
