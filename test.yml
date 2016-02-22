@@ -1,12 +1,12 @@
 ---
 - hosts: all
-  roles:
-    - { role: python_deps, python_deps_extra_libs: "{{ extra_libs }}", python_deps_requirements: "{{ reqs }}"}
-    - { role: python_deps, python_deps_extra_libs: "{{ extra_libs }}", python_deps_requirements: "{{ reqs }}", python_deps_python_version: "2" }
-
+  tasks:
+    - include: tasks/main.yml
+  vars_files:
+    - vars/main.yml
   vars:
-    extra_libs:
+    python_deps_extra_libs:
       - libxml2-dev
       - libxslt1-dev
-    reqs:
+    python_dep_requirements:
       - "/home/travis/build/buildtimetrend/ansible_python_deps/test_requirements.txt"
