@@ -1,6 +1,8 @@
 # Ansible role python_deps
 Ansible role to install python dependencies for various python versions in a Debian based distro.
 
+[![Build Status](https://travis-ci.org/buildtimetrend/ansible_python_deps.svg)](https://travis-ci.org/buildtimetrend/ansible_python_deps)
+
 ## Role Variables
 
 Available variables are listed below, along with default values:
