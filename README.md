@@ -2,6 +2,7 @@
 Ansible role to install python dependencies for various python versions in a Debian based distro.
 
 [![Build Status](https://travis-ci.org/buildtimetrend/ansible_python_deps.svg)](https://travis-ci.org/buildtimetrend/ansible_python_deps)
+[![Galaxy](http://img.shields.io/badge/galaxy-buildtimetrend.python_deps-blue.svg)](https://galaxy.ansible.com/buildtimetrend/python_deps/)
 
 ## Role Variables
 
