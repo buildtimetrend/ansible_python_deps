@@ -3,7 +3,7 @@ Ansible role to install python dependencies for various python versions in a Deb
 
 [![Buildtime trend](http://img.shields.io/badge/release-v1.0-blue.svg)](https://github.com/buildtimetrend/ansible_python_deps/releases/latest)
 [![Build Status](https://travis-ci.org/buildtimetrend/ansible_python_deps.svg)](https://travis-ci.org/buildtimetrend/ansible_python_deps)
-[![Galaxy](http://img.shields.io/badge/galaxy-buildtimetrend.python_deps-blue.svg)](https://galaxy.ansible.com/buildtimetrend/python_deps/)
+[![Galaxy](http://img.shields.io/badge/galaxy-buildtimetrend.python__deps-blue.svg)](https://galaxy.ansible.com/buildtimetrend/python_deps/)
 
 ## Role Variables
 
