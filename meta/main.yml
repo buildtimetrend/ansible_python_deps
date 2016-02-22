@@ -16,3 +16,4 @@ galaxy_info:
   galaxy_tags:
     - development
     - packaging
+  issue_tracker_url: https://github.com/buildtimetrend/ansible_python_deps/issues
