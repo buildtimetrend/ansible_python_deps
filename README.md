@@ -9,7 +9,7 @@ Ansible role to install python dependencies for various python versions in a Deb
 
 Available variables are listed below, along with default values:
 
-    python_deps_python_version : ''
+    python_deps_python_version : '' # major python version, options : '' (defaults to python2), '3'
     python_deps_extra_libs : []
     python_deps_requirements : ['requirements.txt']
 
@@ -17,12 +17,20 @@ Available variables are listed below, along with default values:
 
     - hosts: all
       roles:
-        - { role: python_deps}
-        - { role: python_deps, python_deps_python_version: "3" }
+        - {
+            role: python_deps
+            python_deps_extra_libs : ['package-foo', 'package-bar']
+            python_deps_requirements : ['/path/to/requirements.txt', '/path/to/requirements_test.txt']
+          }
+        - {
+            role: python_deps,
+            python_deps_python_version: "3"
+          }
 
-      vars:
-        python_deps_extra_libs : ['package-foo', 'package-bar']
-        python_deps_requirements : ['/path/to/requirements.txt', '/path/to/requirements_test.txt']
+Contact
+-------
+
+Project on [Github](https://github.com/buildtimetrend/ansible_python_deps)
 
 ## License
 
